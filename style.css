@@ -1,0 +1,34 @@
+/* podocut 공개 페이지 (홈·개인정보처리방침·이용약관) — 앱과 같은 색표: violet + zinc */
+:root {
+  --bg: #fafafa; --canvas: #fff; --line: #e4e4e7; --text: #18181b; --text-2: #52525b; --muted: #71717a;
+  --accent: #7c3aed; --accent-soft: #f5f3ff; --accent-ink: #6d28d9;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #09090b; --canvas: #18181b; --line: #27272a; --text: #f4f4f5; --text-2: #d4d4d8; --muted: #a1a1aa; --accent: #8b5cf6; --accent-soft: #2e1065; --accent-ink: #c4b5fd; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.7 "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic", sans-serif; word-break: keep-all; overflow-wrap: break-word; }
+a { color: var(--accent-ink); text-underline-offset: 3px; }
+header.top { max-width: 760px; margin: 0 auto; padding: 24px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 18px; color: var(--text); text-decoration: none; letter-spacing: -0.01em; }
+.brand .dot { width: 26px; height: 26px; border-radius: 8px; background: var(--accent); display: grid; place-items: center; color: #fff; font-size: 14px; }
+nav a { color: var(--text-2); text-decoration: none; margin-left: 18px; font-size: 15px; }
+nav a:hover, nav a[aria-current=page] { color: var(--text); text-decoration: underline; }
+main { max-width: 760px; margin: 0 auto 64px; padding: 40px 20px; background: var(--canvas); border: 1px solid var(--line); border-radius: 16px; }
+@media (min-width: 800px) { main { padding: 48px 56px; } }
+h1 { font-size: 34px; line-height: 1.25; letter-spacing: -0.03em; margin: 0 0 12px; }
+h2 { font-size: 21px; letter-spacing: -0.01em; margin: 40px 0 8px; }
+h3 { font-size: 17px; margin: 24px 0 4px; }
+p, li { color: var(--text-2); }
+.lead { font-size: 18px; color: var(--text-2); margin: 0 0 24px; }
+.meta { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+.box { background: var(--accent-soft); border-radius: 12px; padding: 16px 20px; margin: 20px 0; }
+.box p { margin: 0; color: var(--text); }
+.features { display: grid; gap: 14px; grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 0; list-style: none; margin: 24px 0; }
+.features li { border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+.features b { display: block; color: var(--text); margin-bottom: 4px; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0 8px; }
+footer { max-width: 760px; margin: 0 auto 40px; padding: 0 20px; color: var(--muted); font-size: 14px; }
+code { font: 14px ui-monospace, Consolas, monospace; color: var(--accent-ink); background: var(--accent-soft); border-radius: 5px; padding: 1px 5px; }
+@media (max-width: 560px) { .features { grid-template-columns: 1fr; } nav a { margin: 0 14px 0 0; } }
