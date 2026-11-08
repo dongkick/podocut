@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#5b21b6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="0" fill="url(#bg)"/>
+  <!-- 줄기와 잎 -->
+  <path d="M512 300 C 512 250, 530 215, 560 190" stroke="#fff" stroke-width="34" stroke-linecap="round" fill="none"/>
+  <path d="M540 255 C 600 190, 700 190, 745 230 C 690 290, 600 300, 540 255 Z" fill="#ede9fe"/>
+  <!-- 포도알: 4·3·2·1 -->
+  <g fill="#fff">
+    <circle cx="347" cy="390" r="78"/><circle cx="457" cy="390" r="78"/><circle cx="567" cy="390" r="78"/><circle cx="677" cy="390" r="78"/>
+    <circle cx="402" cy="520" r="78"/><circle cx="512" cy="520" r="78"/><circle cx="622" cy="520" r="78"/>
+    <circle cx="457" cy="650" r="78"/><circle cx="567" cy="650" r="78"/>
+    <circle cx="512" cy="780" r="78"/>
+  </g>
+  <g fill="#ddd6fe">
+    <circle cx="347" cy="390" r="66"/><circle cx="457" cy="390" r="66"/><circle cx="567" cy="390" r="66"/><circle cx="677" cy="390" r="66"/>
+    <circle cx="402" cy="520" r="66"/><circle cx="512" cy="520" r="66"/><circle cx="622" cy="520" r="66"/>
+    <circle cx="457" cy="650" r="66"/><circle cx="567" cy="650" r="66"/>
+    <circle cx="512" cy="780" r="66"/>
+  </g>
+  <g fill="#fff" opacity=".85">
+    <circle cx="322" cy="365" r="16"/><circle cx="432" cy="365" r="16"/><circle cx="542" cy="365" r="16"/><circle cx="652" cy="365" r="16"/>
+    <circle cx="377" cy="495" r="16"/><circle cx="487" cy="495" r="16"/><circle cx="597" cy="495" r="16"/>
+    <circle cx="432" cy="625" r="16"/><circle cx="542" cy="625" r="16"/><circle cx="487" cy="755" r="16"/>
+  </g>
+</svg>
